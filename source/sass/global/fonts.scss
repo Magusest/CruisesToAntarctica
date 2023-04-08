@@ -1,19 +1,29 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2");
-// }
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "MontserratLight";
+  font-display: swap;
+  src:
+    url("../fonts/montserrat-400.woff2") format("woff2"),
+    url("../fonts/montserrat-400.woff") format("woff");
+}
 
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  font-family: "MontserratMediun";
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2");
+    url("../fonts/montserrat-500.woff2") format("woff2"),
+    url("../fonts/montserrat-500.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "MontserratBold";
+  font-display: swap;
+  src:
+    url("../fonts/montserrat-600.woff2") format("woff2"),
+    url("../fonts/montserrat-600.woff") format("woff");
 }

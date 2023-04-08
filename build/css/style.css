@@ -387,9 +387,25 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "MontserratLight";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/montserrat-400.woff2") format("woff2"), url("../fonts/montserrat-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "MontserratMediun";
+  font-display: swap;
+  src: url("../fonts/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "MontserratBold";
+  font-display: swap;
+  src: url("../fonts/montserrat-600.woff2") format("woff2"), url("../fonts/montserrat-600.woff") format("woff");
 }
 
 *,
@@ -614,9 +630,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 103px;
 }
 
 .btn {
@@ -1314,21 +1330,21 @@ button,
   }
 */
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
   .container {
-    padding: 0 32px;
+    padding: 0 103px;
   }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 45px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 
   .modal__wrapper {
