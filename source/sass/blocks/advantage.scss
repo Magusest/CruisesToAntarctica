@@ -1,0 +1,21 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-alice-blue;
+  padding: 30px 42px 50px 30px;
+}
+
+.advantage h3 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantage p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.advantage svg {
+  fill: $color-tangaroa;
+  order: -1;
+}

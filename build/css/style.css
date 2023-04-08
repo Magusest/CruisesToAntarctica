@@ -1490,10 +1490,60 @@ h4 {
   position: relative;
 }
 
-.advantages img {
+.advantages h2 {
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.advantages picture {
   position: absolute;
   width: 100%;
+  min-width: 320px;
+  top: 0;
+  z-index: -1;
+}
+
+.advantages img {
   height: 562px;
+  width: 100%;
+}
+
+.advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #F9FBFD;
+  padding: 30px 42px 50px 30px;
+}
+
+.advantage h3 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantage p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.advantage svg {
+  fill: #011C40;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 /* @mixin hover-focus {
@@ -1582,6 +1632,19 @@ h4 {
     font-size: 26px;
     line-height: 36px;
   }
+
+  .advantages h2 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+  }
+
+  .advantages img {
+    height: 588px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1647,6 +1710,20 @@ h4 {
   .intro h2 {
     font-size: 24px;
     line-height: 34px;
+  }
+
+  .advantages h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .advantages img {
+    height: 997px;
   }
 }
 
