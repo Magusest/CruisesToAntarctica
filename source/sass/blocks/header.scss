@@ -1,0 +1,10 @@
+.header__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 35px 0;
+  margin-bottom: -100%;
+  z-index: 2;
+}
