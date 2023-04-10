@@ -1,0 +1,92 @@
+.cruise-card {
+  position: relative;
+  background-color: $color-tangaroa;
+  color: $color-alice-blue;
+  padding: 35px 25px;
+
+  @include vp-1023 {
+    padding: 35px;
+  }
+
+  @include vp-767 {
+    padding: 35px 25px;
+  }
+}
+
+.cruise-card__offer {
+  display: grid;
+  height: 100%;
+}
+
+.cruise-card h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.cruise-card dl {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.cruise-card dt {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruise-card dd {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-quartz;
+}
+
+.cruise-card button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: $color-alice-blue;
+  width: 100%;
+  padding: 14px 0;
+  margin-top: auto;
+  justify-self: end;
+}
+
+.cruise-card__cover {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+
+.cruise-card__cover h3 {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.cruise-card__cover picture {
+  width: 100%;
+  height: 100%;
+}
+
+.cruise-card__cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.cruise-card:hover {
+  .cruise-card__cover {
+    opacity: 0;
+    transform: scale(0.1);
+
+    h3 {
+      transform: scale(0);
+    }
+  }
+}

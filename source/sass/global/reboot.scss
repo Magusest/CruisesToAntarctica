@@ -30,7 +30,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-
+  color: $color-tangaroa;
   background-color: $color-default-white;
 }
 
@@ -153,7 +153,12 @@ li {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
+

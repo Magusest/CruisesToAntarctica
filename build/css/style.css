@@ -437,6 +437,7 @@ html {
 body {
   width: 100%;
   height: 100%;
+  color: #011C40;
   background-color: #ffffff;
 }
 
@@ -577,7 +578,11 @@ li {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -1427,14 +1432,14 @@ h4 {
   transform: rotate(-45deg);
 }
 
-.cruises {
+.greeting {
   position: relative;
   margin: 0;
   padding: 284px 0 282px;
   z-index: -1;
 }
 
-.cruises h1 {
+.greeting h1 {
   font-family: "MontserratBold", sans-serif;
   font-size: 54px;
   line-height: 66px;
@@ -1443,7 +1448,7 @@ h4 {
   padding: 0 90px;
 }
 
-.cruises p {
+.greeting p {
   font-family: "MontserratLight", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -1452,7 +1457,7 @@ h4 {
   padding: 0 90px;
 }
 
-.cruises img {
+.greeting img {
   position: absolute;
   width: 100%;
   height: 650px;
@@ -1476,18 +1481,17 @@ h4 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
-  color: #011C40;
 }
 
 .intro p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #011C40;
 }
 
 .advantages {
   position: relative;
+  padding: 120px 0;
 }
 
 .advantages h2 {
@@ -1502,18 +1506,20 @@ h4 {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  margin-top: 60px;
 }
 
 .advantages picture {
   position: absolute;
   width: 100%;
   min-width: 320px;
+  height: 100%;
   top: 0;
   z-index: -1;
 }
 
 .advantages img {
-  height: 562px;
+  height: 100%;
   width: 100%;
 }
 
@@ -1544,6 +1550,117 @@ h4 {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
+}
+
+.cruises {
+  padding: 95px 0 120px;
+}
+
+.cruises h2 {
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.cruises ul,
+.cruises ol {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.cruise-card {
+  position: relative;
+  background-color: #011C40;
+  color: #F9FBFD;
+  padding: 35px 25px;
+}
+
+.cruise-card__offer {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+}
+
+.cruise-card h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.cruise-card dl {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.cruise-card dt {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruise-card dd {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #D8D8D9;
+}
+
+.cruise-card button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: #F9FBFD;
+  width: 100%;
+  padding: 14px 0;
+  margin-top: auto;
+  -ms-grid-column-align: end;
+  justify-self: end;
+}
+
+.cruise-card__cover {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.cruise-card__cover h3 {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.cruise-card__cover picture {
+  width: 100%;
+  height: 100%;
+}
+
+.cruise-card__cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.cruise-card:hover .cruise-card__cover {
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+}
+
+.cruise-card:hover .cruise-card__cover h3 {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }
 
 /* @mixin hover-focus {
@@ -1608,29 +1725,33 @@ h4 {
     line-height: 18px;
   }
 
-  .cruises {
+  .greeting {
     padding: 256px 0;
   }
 
-  .cruises h1 {
+  .greeting h1 {
     font-size: 50px;
     line-height: 60px;
     padding: 0;
   }
 
-  .cruises p {
+  .greeting p {
     font-size: 18px;
     line-height: 22px;
     padding: 0;
   }
 
-  .cruises img {
+  .greeting img {
     height: 638px;
   }
 
   .intro h2 {
     font-size: 26px;
     line-height: 36px;
+  }
+
+  .advantages {
+    padding: 100px 0;
   }
 
   .advantages h2 {
@@ -1642,8 +1763,32 @@ h4 {
     gap: 30px;
   }
 
-  .advantages img {
-    height: 588px;
+  .advantage {
+    padding: 26px 16px 25px 20px;
+  }
+
+  .cruises {
+    padding: 100px 0;
+  }
+
+  .cruises h2 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .cruises h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .cruises ul,
+  .cruises ol {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cruise-card {
+    padding: 35px;
   }
 }
 
@@ -1684,21 +1829,21 @@ h4 {
     display: block;
   }
 
-  .cruises {
+  .greeting {
     padding: 198px 0;
   }
 
-  .cruises h1 {
+  .greeting h1 {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .cruises p {
+  .greeting p {
     font-size: 16px;
     line-height: 22px;
   }
 
-  .cruises img {
+  .greeting img {
     height: 500px;
   }
 
@@ -1712,6 +1857,10 @@ h4 {
     line-height: 34px;
   }
 
+  .advantages {
+    padding: 60px 0;
+  }
+
   .advantages h2 {
     font-size: 24px;
     line-height: 36px;
@@ -1720,10 +1869,22 @@ h4 {
   .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    margin-top: 40px;
   }
 
-  .advantages img {
-    height: 997px;
+  .cruises {
+    padding: 65px 0;
+  }
+
+  .cruises ul,
+  .cruises ol {
+    margin-top: 40px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cruise-card {
+    padding: 35px 25px;
   }
 }
 

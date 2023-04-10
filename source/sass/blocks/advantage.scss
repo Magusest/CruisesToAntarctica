@@ -3,6 +3,10 @@
   flex-direction: column;
   background-color: $color-alice-blue;
   padding: 30px 42px 50px 30px;
+
+  @include vp-1023 {
+    padding: 26px 16px 25px 20px;
+  }
 }
 
 .advantage h3 {
