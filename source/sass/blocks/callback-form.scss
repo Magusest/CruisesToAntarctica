@@ -17,4 +17,15 @@
   font-weight: 600;
   background-color: $color-alice-blue;
   color: $color-tangaroa;
+  transition: 0.5s;
+}
+
+.callback-form button:hover,
+.callback-form button:focus {
+  transform: scale(1.1);
+  background-color: $color-whisper;
+}
+
+.callback-form button:active {
+  transform: scale(0.9);
 }

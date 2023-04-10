@@ -1,0 +1,55 @@
+.map {
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 100px;
+  padding: 120px 0;
+
+  @include vp-1023 {
+    gap: 30px;
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding: 65px 0;
+  }
+}
+
+.map p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.map address {
+  margin-bottom: 24px;
+}
+
+.map span {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: $color-tangaroa;
+}
+
+.map__contacts {
+  align-self: center;
+}
+
+.map__container {
+  background-color: aqua;
+  order: -1;
+  width: 100%;
+  height: 306px;
+
+  @include vp-1023 {
+    height: 335px;
+  }
+
+  @include vp-767 {
+    order: 0;
+    height: 316px;
+  }
+}

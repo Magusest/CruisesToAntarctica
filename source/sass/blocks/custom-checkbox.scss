@@ -1,4 +1,5 @@
 .custom-checkbox {
+  cursor: pointer;
   display: flex;
   gap: 5px;
   align-items: center;
@@ -29,4 +30,9 @@
 .custom-checkbox span {
   font-size: 10px;
   line-height: 12px;
+}
+
+.custom-checkbox:hover,
+.custom-checkbox:focus {
+  outline: solid $color-quartz;
 }

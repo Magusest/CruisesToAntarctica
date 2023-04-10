@@ -3,6 +3,7 @@
   flex-direction: column;
   background-color: $color-alice-blue;
   padding: 30px 42px 50px 30px;
+  transition: 0.8s;
 
   @include vp-1023 {
     padding: 26px 16px 25px 20px;
@@ -22,4 +23,20 @@
 .advantage svg {
   fill: $color-tangaroa;
   order: -1;
+}
+
+.advantage:hover {
+  background-color: $color-tangaroa;
+
+  h3 {
+    color: $color-alice-blue;
+  }
+
+  p {
+    color: $color-alice-blue;
+  }
+
+  svg {
+    fill: $color-alice-blue;
+  }
 }

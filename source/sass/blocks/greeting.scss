@@ -53,19 +53,15 @@
   }
 }
 
+.greeting picture {
+  width: 100%;
+  height: 100%;
+}
 .greeting img {
   position: absolute;
   width: 100%;
-  height: 650px;
+  height: 100%;
   top: 0;
   z-index: -2;
   min-width: 320px;
-
-  @include vp-1023 {
-    height: 638px;
-  }
-
-  @include vp-767 {
-    height: 500px;
-  }
 }
