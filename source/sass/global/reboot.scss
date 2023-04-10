@@ -74,6 +74,7 @@ input:-webkit-autofill {
 // firefox placeholder \ invalid fix + ios bdrs
 input,
 textarea {
+  border: none;
   border-radius: 0;
 
   &::placeholder {
@@ -128,6 +129,12 @@ input:matches([type="email"],
   [type="text"],
   [type="url"]) {
   appearance: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-tangaroa-placeholder;
 }
 
 button,

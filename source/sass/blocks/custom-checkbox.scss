@@ -1,0 +1,32 @@
+.custom-checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: $color-alice-blue;
+}
+
+.custom-checkbox{
+  input:checked + .checkbox::after  {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(-45deg);
+    border-bottom: 1px solid $color-sapphire;
+    border-left: 1px solid $color-sapphire;
+  }
+}
+
+.custom-checkbox span {
+  font-size: 10px;
+  line-height: 12px;
+}

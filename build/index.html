@@ -127,7 +127,7 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз "Астория"</h3>
                   <picture>
-                    <source src="./img/cruises/astoria.webp" srcset="./img/cruises/astoria@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/astoria.webp 1x, ./img/cruises/astoria@2x.webp 2x">
                     <img src="./img/cruises/astoria.jpg" srcset="./img/cruises/astoria@2x.jpg" width="260" height="386" alt="Красивый ледник">
                   </picture>
                 </div>
@@ -150,7 +150,7 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз “Элайн”</h3>
                   <picture>
-                    <source src="./img/cruises/eline.webp" srcset="./img/cruises/eline@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/eline.webp 1x, ./img/cruises/eline@2x.webp 2x">
                     <img src="./img/cruises/eline@.jpg" srcset="./img/cruises/eline@2x.jpg" width="260" height="386" alt="Гора и озеро">
                   </picture>
                 </div>
@@ -173,7 +173,7 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз "Атлантис"</h3>
                   <picture>
-                    <source src="./img/cruises/atlantis.webp" srcset="./img/cruises/atlantis@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/atlantis.webp 1x, ./img/cruises/atlantis@2x.webp 2x">
                     <img src="./img/cruises/atlantis.jpg" srcset="./img/cruises/atlantis@2x.jpg" width="260" height="386" alt="Дрейфуюие льды">
                   </picture>
                 </div>
@@ -196,7 +196,7 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз "Одиссей"</h3>
                   <picture>
-                    <source src="./img/cruises/oddesy.webp" srcset="./img/cruises/oddesy@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/oddesy.webp 1x, ./img/cruises/oddesy@2x.webp 2x">
                     <img src="./img/cruises/oddesy.jpg" srcset="./img/cruises/oddesy@2x.jpg" width="260" height="386" alt="Ариктическое озеро">
                   </picture>
                 </div>
@@ -219,7 +219,7 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз "Олимпия"</h3>
                   <picture>
-                    <source src="./img/cruises/olympus.webp" srcset="./img/cruises/olympus@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/olympus.webp 1x, ./img/cruises/olympus@2x.webp 2x">
                     <img src="./img/cruises/olympus.jpg" srcset="./img/cruises/olympus@2x.jpg" width="260" height="386" alt="Пингрины на фоне льдов">
                   </picture>
                 </div>
@@ -242,7 +242,7 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз "Аврора"</h3>
                   <picture>
-                    <source src="./img/cruises/aurora.webp" srcset="./img/cruises/aurora@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/aurora.webp 1x, ./img/cruises/aurora@2x.webp 2x">
                     <img src="./img/cruises/aurora.jpg" srcset="./img/cruises/aurora@2x.jpg" width="260" height="386" alt="Каменистое побережье во льдах">
                   </picture>
                 </div>
@@ -265,7 +265,7 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз "Леонор"</h3>
                   <picture>
-                    <source src="./img/cruises/leonor.webp" srcset="./img/cruises/leonor@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/leonor.webp 1x, ./img/cruises/leonor@2x.webp 2x">
                     <img src="./img/cruises/leonor.jpg" srcset="./img/cruises/leonor@2x.jpg" width="260" height="386" alt="Корабль на фоне льдов">
                   </picture>
                 </div>
@@ -288,13 +288,44 @@
                 <div class="cruise-card__cover">
                   <h3>Круиз "Минион - 1"</h3>
                   <picture>
-                    <source src="./img/cruises/minion.jpg" srcset="./img/cruises/minion@2x.webp">
+                    <source type="image/webp" srcset="./img/cruises/minion.webp 1x, ./img/cruises/minion@2x.webp 2x">
                     <img src="./img/cruises/minion.jpg" srcset="./img/cruises/minion@2x.jpg" width="260" height="386" alt="Трещена в леднике">
                   </picture>
                 </div>
               </li>
             </ul>
           </div>
+        </section>
+        <section class="booking">
+          <div class="container">
+            <div class="booking__wrapper">
+              <div class="booking__intro">
+                <h3>Раннее бронирование</h3>
+                <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+              </div>
+              <div class="booking__form">
+                <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+                <form class="callback-form" action="#">
+                  <label class="visually-hidden" for="name">Ваше имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя" required>
+                  <label class="visually-hidden" for="phone">Ваш контактный номер телефона</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  <label class="visually-hidden" for="email">Ваш адресс электронной почты</label>
+                  <input type="email" name="email" id="email" placeholder="Email" required>
+                  <label class="custom-checkbox">
+                    <input class="visually-hidden" type="checkbox"required>
+                    <span class="checkbox"></span>
+                    <span>Я согласен на обработку моих персональных данных</span>
+                  </label>
+                  <button type="submit">Оставить заявку</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="./img/booking/booking.webp 1x, ./img/booking/booking@2x.webp 2x">
+            <img src="./img/booking/booking.jpg" srcset="./img/booking/booking@2x.jpg" width="1366" height="555" alt="Рассветный ледник">
+          </picture>
         </section>
         <!-- <section class="introdution">
           <div class="container">

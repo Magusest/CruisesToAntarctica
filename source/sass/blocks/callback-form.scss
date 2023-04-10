@@ -1,0 +1,20 @@
+.callback-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.callback-form input {
+  padding: 10px 16px;
+  margin-bottom: 20px;
+}
+
+.callback-form button {
+  margin-top: 30px;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: $color-alice-blue;
+  color: $color-tangaroa;
+}
