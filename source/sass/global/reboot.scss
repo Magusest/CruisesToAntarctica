@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
+  font-family: $ff-montserrat-regular;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -42,9 +42,9 @@ footer {
 }
 
 a {
+  font-family: $ff-montserrat-medium;
   color: $color-alice-blue;
   text-decoration: none;
-  font-family: "MontserratLight", sans-serif;
 }
 
 img,
@@ -132,6 +132,7 @@ input:matches([type="email"],
 }
 
 input::placeholder {
+  font-family: $ff-montserrat-regular;
   font-size: 14px;
   line-height: 21px;
   color: $color-tangaroa-placeholder;
@@ -144,6 +145,7 @@ button,
   appearance: none;
   background-color: transparent;
   border: none;
+  font-family: $ff-montserrat-semi-bold;
 }
 
 ul {
@@ -169,3 +171,18 @@ dd {
   padding: 0;
 }
 
+h1 {
+  font-family: $ff-montserrat-bold;
+}
+
+h2 {
+  font-family: $ff-montserrat-semi-bold;
+}
+
+h3 {
+  font-family: $ff-montserrat-medium;
+}
+
+dt {
+  font-family: $ff-montserrat-medium;
+}

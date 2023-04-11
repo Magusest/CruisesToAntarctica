@@ -387,25 +387,33 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "MontserratLight";
+  font-family: "MontserratRegular";
   font-display: swap;
-  src: url("../fonts/montserrat-400.woff2") format("woff2"), url("../fonts/montserrat-400.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "MontserratMediun";
   font-display: swap;
-  src: url("../fonts/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "MontserratBold";
   font-display: swap;
-  src: url("../fonts/montserrat-600.woff2") format("woff2"), url("../fonts/montserrat-600.woff") format("woff");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "MontserratBold";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
 *,
@@ -427,7 +435,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
+  font-family: "MontserratRegular", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -449,9 +457,9 @@ footer {
 }
 
 a {
+  font-family: "MontserratMediun", "Arial", sans-serif;
   color: #F9FBFD;
   text-decoration: none;
-  font-family: "MontserratLight", sans-serif;
 }
 
 img,
@@ -555,30 +563,35 @@ input:matches([type=email],
 }
 
 input::-webkit-input-placeholder {
+  font-family: "MontserratRegular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 input::-moz-placeholder {
+  font-family: "MontserratRegular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 input:-ms-input-placeholder {
+  font-family: "MontserratRegular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 input::-ms-input-placeholder {
+  font-family: "MontserratRegular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 input::placeholder {
+  font-family: "MontserratRegular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
@@ -593,6 +606,7 @@ button,
   appearance: none;
   background-color: transparent;
   border: none;
+  font-family: "MontserratSemiBold", "Arial", sans-serif;
 }
 
 ul {
@@ -616,6 +630,22 @@ dt,
 dd {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: "MontserratBold", "Arial", sans-serif;
+}
+
+h2 {
+  font-family: "MontserratSemiBold", "Arial", sans-serif;
+}
+
+h3 {
+  font-family: "MontserratMediun", "Arial", sans-serif;
+}
+
+dt {
+  font-family: "MontserratMediun", "Arial", sans-serif;
 }
 
 .wrapper {
@@ -1505,7 +1535,6 @@ dd {
 }
 
 .greeting h1 {
-  font-family: "MontserratBold", sans-serif;
   font-size: 54px;
   line-height: 66px;
   color: #F9FBFD;
@@ -1514,7 +1543,6 @@ dd {
 }
 
 .greeting p {
-  font-family: "MontserratLight", sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #F9FBFD;
@@ -1610,6 +1638,7 @@ dd {
 .advantage h3 {
   font-size: 18px;
   line-height: 26px;
+  font-weight: 500;
 }
 
 .advantage p {
@@ -1937,6 +1966,7 @@ dd {
 }
 
 .map span {
+  font-family: "MontserratRegular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
