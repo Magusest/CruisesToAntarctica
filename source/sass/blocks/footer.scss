@@ -19,6 +19,12 @@
   }
 }
 
+.footer__logo {
+  @include vp-767 {
+    margin-right: auto;
+  }
+}
+
 .footer__nav .nav__list {
   @include vp-767 {
     display: block;
