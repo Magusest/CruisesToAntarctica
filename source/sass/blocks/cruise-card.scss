@@ -3,6 +3,7 @@
   background-color: $color-tangaroa;
   color: $color-alice-blue;
   padding: 35px 25px;
+  overflow: hidden;
 
   @include vp-1023 {
     padding: 35px;
@@ -96,7 +97,7 @@
 .cruise-card:focus-within {
   .cruise-card__cover {
     opacity: 0;
-    transform: scale(0.1);
+    transform: translateY(100%);
 
     h3 {
       transform: scale(0);

@@ -403,7 +403,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 600;
-  font-family: "MontserratBold";
+  font-family: "MontserratSemiBold";
   font-display: swap;
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
 }
@@ -446,7 +446,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  color: #011C40;
+  color: #011c40;
   background-color: #ffffff;
 }
 
@@ -459,7 +459,7 @@ footer {
 
 a {
   font-family: "MontserratMediun", "Arial", sans-serif;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-decoration: none;
 }
 
@@ -1388,7 +1388,7 @@ dt {
   color: #15ab07;
 }
 
-.header__container {
+.header {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -1452,8 +1452,8 @@ dt {
 .nav__link {
   font-size: 16px;
   line-height: 20px;
-  -webkit-filter: drop-shadow(0px 4px 4px #000000);
-  filter: drop-shadow(0px 4px 4px #000000);
+  -webkit-filter: drop-shadow(0 4px 4px #000000);
+  filter: drop-shadow(0 4px 4px #000000);
   cursor: pointer;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1464,7 +1464,7 @@ dt {
 .nav__link:hover,
 .nav__link:focus {
   opacity: 0.6;
-  border-bottom: 1px solid #F9FBFD;
+  border-bottom: 1px solid #f9fbfd;
   padding: 5px 0;
 }
 
@@ -1476,8 +1476,8 @@ dt {
   position: relative;
   width: 24px;
   height: 12px;
-  border-top: 2px solid #F9FBFD;
-  border-bottom: 2px solid #F9FBFD;
+  border-top: 2px solid #f9fbfd;
+  border-bottom: 2px solid #f9fbfd;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -1488,7 +1488,7 @@ dt {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
@@ -1538,7 +1538,7 @@ dt {
 .greeting h1 {
   font-size: 54px;
   line-height: 66px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0 90px;
 }
@@ -1546,7 +1546,7 @@ dt {
 .greeting p {
   font-size: 20px;
   line-height: 24px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0 90px;
 }
@@ -1629,7 +1629,7 @@ dt {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   padding: 30px 42px 50px 30px;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
@@ -1648,26 +1648,26 @@ dt {
 }
 
 .advantage svg {
-  fill: #011C40;
+  fill: #011c40;
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
 }
 
 .advantage:hover {
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .advantage:hover h3 {
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .advantage:hover p {
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .advantage:hover svg {
-  fill: #F9FBFD;
+  fill: #f9fbfd;
 }
 
 .cruises {
@@ -1692,9 +1692,10 @@ dt {
 
 .cruise-card {
   position: relative;
-  background-color: #011C40;
-  color: #F9FBFD;
+  background-color: #011c40;
+  color: #f9fbfd;
   padding: 35px 25px;
+  overflow: hidden;
 }
 
 .cruise-card__offer {
@@ -1724,15 +1725,15 @@ dt {
   margin-top: 10px;
   font-size: 14px;
   line-height: 20px;
-  color: #D8D8D9;
+  color: #d8d8d9;
 }
 
 .cruise-card button {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  color: #011C40;
-  background-color: #F9FBFD;
+  color: #011c40;
+  background-color: #f9fbfd;
   width: 100%;
   padding: 14px 0;
   margin-top: auto;
@@ -1745,7 +1746,7 @@ dt {
 
 .cruise-card button:hover,
 .cruise-card button:focus {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -1789,9 +1790,9 @@ dt {
 .cruise-card:hover .cruise-card__cover,
 .cruise-card:focus-within .cruise-card__cover {
   opacity: 0;
-  -webkit-transform: scale(0.1);
-  -ms-transform: scale(0.1);
-  transform: scale(0.1);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .cruise-card:hover .cruise-card__cover h3,
@@ -1835,8 +1836,8 @@ dt {
 .booking__form {
   width: 455px;
   padding: 50px;
-  background-color: #011C40;
-  color: #F9FBFD;
+  background-color: #011c40;
+  color: #f9fbfd;
 }
 
 .booking__form h3 {
@@ -1882,8 +1883,8 @@ dt {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  background-color: #F9FBFD;
-  color: #011C40;
+  background-color: #f9fbfd;
+  color: #011c40;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1894,7 +1895,7 @@ dt {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .callback-form button:active {
@@ -1914,14 +1915,6 @@ dt {
   align-items: center;
 }
 
-.checkbox {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-color: #F9FBFD;
-}
-
 .custom-checkbox input:checked + .checkbox::after {
   content: "";
   position: absolute;
@@ -1932,8 +1925,16 @@ dt {
   -webkit-transform: translate(-50%, -100%) rotate(-45deg);
   -ms-transform: translate(-50%, -100%) rotate(-45deg);
   transform: translate(-50%, -100%) rotate(-45deg);
-  border-bottom: 1px solid #101A56;
-  border-left: 1px solid #101A56;
+  border-bottom: 1px solid #101a56;
+  border-left: 1px solid #101a56;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
 }
 
 .custom-checkbox span {
@@ -1943,7 +1944,7 @@ dt {
 
 .custom-checkbox:hover,
 .custom-checkbox:focus {
-  outline: solid #D8D8D9;
+  outline: solid #d8d8d9;
 }
 
 .map {
@@ -1971,7 +1972,7 @@ dt {
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
-  color: #011C40;
+  color: #011c40;
 }
 
 .map__contacts {
@@ -1981,7 +1982,7 @@ dt {
 }
 
 .map__container {
-  background-color: aqua;
+  background-color: #ff1553;
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
@@ -1990,7 +1991,7 @@ dt {
 }
 
 .footer {
-  background-color: #011C40;
+  background-color: #011c40;
   padding: 50px 0;
   min-width: 320px;
 }
@@ -2213,7 +2214,7 @@ dt {
   .nav__list--active {
     display: block;
     width: 285px;
-    background-color: white;
+    background-color: #f9fbfd;
   }
 
   .nav__button {
@@ -2324,7 +2325,7 @@ dt {
 
   .footer__nav .nav__list {
     display: block;
-    color: #F9FBFD;
+    color: #f9fbfd;
   }
 
   .footer__social-media {
