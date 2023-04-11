@@ -6,8 +6,8 @@
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: auto 5fr 1fr;
+  gap: 10px;
   width: 100%;
 
   @include vp-1023 {
@@ -26,6 +26,12 @@
 }
 
 .footer__nav .nav__list {
+  padding-left: 30px;
+
+  @include vp-1279 {
+    padding: 0;
+  }
+
   @include vp-767 {
     display: block;
     color: $color-alice-blue;
@@ -34,9 +40,11 @@
 
 .footer__social-media {
   display: flex;
-  gap: 26px;
+  gap: 27px;
   align-self: center;
   margin-left: auto;
+  padding-top: 9px;
+  padding-right: 1px;
 
   @include vp-767 {
     margin: 0;

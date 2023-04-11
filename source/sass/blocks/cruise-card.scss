@@ -2,7 +2,8 @@
   position: relative;
   background-color: $color-tangaroa;
   color: $color-alice-blue;
-  padding: 35px 25px;
+  height: 386px;
+  padding: 28px 25px 35px 25px;
   overflow: hidden;
 
   @include vp-1023 {
@@ -26,18 +27,18 @@
 }
 
 .cruise-card dl {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-top: 1px;
+  margin-bottom: -12px;
 }
 
 .cruise-card dt {
-  margin-top: 20px;
+  margin-top: 0px;
   font-size: 14px;
   line-height: 20px;
 }
 
 .cruise-card dd {
-  margin-top: 10px;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 20px;
   color: $color-quartz;
@@ -50,7 +51,7 @@
   color: $color-tangaroa;
   background-color: $color-alice-blue;
   width: 100%;
-  padding: 14px 0;
+  padding: 9px 0;
   margin-top: auto;
   justify-self: end;
   transition: 0.5s;

@@ -1,6 +1,6 @@
 .advantages {
   position: relative;
-  padding: 120px 0;
+  padding: 110px 0 120px;
 
   @include vp-1023 {
     padding: 100px 0;
@@ -31,7 +31,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin-top: 60px;
+  margin-top: 50px;
 
 
   @include vp-1023 {

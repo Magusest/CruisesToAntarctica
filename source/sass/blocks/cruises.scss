@@ -1,5 +1,5 @@
 .cruises {
-  padding: 95px 0 120px;
+  padding: 86px 0 120px;
 
   @include vp-1023 {
     padding: 100px 0;
@@ -28,10 +28,11 @@
 
 .cruises ul,
 .cruises ol {
-  margin-top: 60px;
+  margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  padding: 0 15px;
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);

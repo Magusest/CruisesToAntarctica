@@ -1,0 +1,25 @@
+.mobile-menu {
+  position: absolute;
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  width: 285px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  background-color: $color-alice-blue;
+}
+
+.mobile-menu__logo {
+  grid-column: 1/2;
+}
+
+.mobile-menu__nav {
+  grid-column: 1/-1;
+  width: 100%;
+}
+
+.mobile-menu__button {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}

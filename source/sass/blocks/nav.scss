@@ -16,8 +16,23 @@
 .nav__list--active {
   @include vp-767 {
     display: block;
-    width: 285px;
+    top: 0;
+    right: -15px;
     background-color: $color-alice-blue;
+    color: $color-tangaroa;
+    padding: 75px 15px;
+
+    .nav__item {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .nav__link {
+      font-size: 18px;
+      line-height: 22px;
+      color: $color-tangaroa;
+      filter: none;
+    }
   }
 }
 

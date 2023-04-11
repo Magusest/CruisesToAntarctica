@@ -3,6 +3,7 @@
   display: flex;
   gap: 5px;
   align-items: center;
+  margin-top: -1px;
 
   input:checked + .checkbox::after {
     content: "";

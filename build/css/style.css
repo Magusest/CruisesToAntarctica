@@ -447,7 +447,7 @@ body {
   width: 100%;
   height: 100%;
   color: #011c40;
-  background-color: #ffffff;
+  background-color: #f9fbfd;
 }
 
 header,
@@ -1473,6 +1473,7 @@ dt {
 }
 
 .burger {
+  cursor: pointer;
   position: relative;
   width: 24px;
   height: 12px;
@@ -1500,6 +1501,9 @@ dt {
   width: 13px;
   height: 13px;
   border: none;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .burger--active::before,
@@ -1531,7 +1535,7 @@ dt {
 .greeting {
   position: relative;
   margin: 0;
-  padding: 284px 0 282px;
+  padding: 270px 0 286px;
   z-index: -1;
 }
 
@@ -1540,7 +1544,7 @@ dt {
   line-height: 66px;
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0 90px;
+  padding: 0 95px;
 }
 
 .greeting p {
@@ -1548,7 +1552,7 @@ dt {
   line-height: 24px;
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0 90px;
+  padding: 12px 0 0 95px;
 }
 
 .greeting picture {
@@ -1573,6 +1577,11 @@ dt {
   gap: 30px;
   -ms-grid-row-align: center;
   align-self: center;
+  padding: 112px 0 138px 0;
+}
+
+.intro__wrapper {
+  padding-top: 56px;
 }
 
 .intro h2 {
@@ -1585,11 +1594,22 @@ dt {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-top: 24px;
+  padding-right: 34px;
+}
+
+.intro picture {
+  width: 100%;
+  margin-left: 2px;
+}
+
+.intro img {
+  width: 100%;
 }
 
 .advantages {
   position: relative;
-  padding: 120px 0;
+  padding: 110px 0 120px;
 }
 
 .advantages h2 {
@@ -1604,7 +1624,7 @@ dt {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .advantages picture {
@@ -1630,7 +1650,7 @@ dt {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f9fbfd;
-  padding: 30px 42px 50px 30px;
+  padding: 30px 30px 44px;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
@@ -1640,11 +1660,13 @@ dt {
   font-size: 18px;
   line-height: 26px;
   font-weight: 500;
+  margin-top: 18px;
 }
 
 .advantage p {
   font-size: 14px;
   line-height: 20px;
+  margin-top: 10px;
 }
 
 .advantage svg {
@@ -1671,7 +1693,7 @@ dt {
 }
 
 .cruises {
-  padding: 95px 0 120px;
+  padding: 86px 0 120px;
 }
 
 .cruises h2 {
@@ -1682,19 +1704,21 @@ dt {
 
 .cruises ul,
 .cruises ol {
-  margin-top: 60px;
+  margin-top: 48px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  padding: 0 15px;
 }
 
 .cruise-card {
   position: relative;
   background-color: #011c40;
   color: #f9fbfd;
-  padding: 35px 25px;
+  height: 386px;
+  padding: 28px 25px 35px 25px;
   overflow: hidden;
 }
 
@@ -1711,18 +1735,18 @@ dt {
 }
 
 .cruise-card dl {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-top: 1px;
+  margin-bottom: -12px;
 }
 
 .cruise-card dt {
-  margin-top: 20px;
+  margin-top: 0px;
   font-size: 14px;
   line-height: 20px;
 }
 
 .cruise-card dd {
-  margin-top: 10px;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 20px;
   color: #d8d8d9;
@@ -1735,7 +1759,7 @@ dt {
   color: #011c40;
   background-color: #f9fbfd;
   width: 100%;
-  padding: 14px 0;
+  padding: 9px 0;
   margin-top: auto;
   -ms-grid-column-align: end;
   justify-self: end;
@@ -1816,33 +1840,34 @@ dt {
 }
 
 .booking__intro {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  padding-top: 162px;
 }
 
 .booking__intro h3 {
+  font-family: "MontserratBold", "Arial", sans-serif;
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
+  margin-top: 1px;
 }
 
 .booking__intro p {
   font-size: 18px;
-  line-height: 26px;
-  margin-top: 30px;
+  line-height: 27px;
+  margin-top: 8px;
+  padding-right: 120px;
 }
 
 .booking__form {
-  width: 455px;
-  padding: 50px;
+  width: 403px;
+  padding: 44px 50px 50px;
   background-color: #011c40;
   color: #f9fbfd;
 }
 
 .booking__form h3 {
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   font-weight: 500;
 }
 
@@ -1869,17 +1894,17 @@ dt {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 
 .callback-form input {
-  padding: 10px 16px;
-  margin-bottom: 20px;
+  padding: 11px 16px 12px;
+  margin-bottom: 22px;
 }
 
 .callback-form button {
-  margin-top: 30px;
-  padding: 14px;
+  margin-top: 29px;
+  padding: 11px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
@@ -1913,6 +1938,7 @@ dt {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: -1px;
 }
 
 .custom-checkbox input:checked + .checkbox::after {
@@ -1950,21 +1976,32 @@ dt {
 .map {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto;
-  grid-template-columns: 50% auto;
-  gap: 100px;
+  -ms-grid-columns: 48% auto;
+  grid-template-columns: 48% auto;
+  gap: 103px;
   padding: 120px 0;
 }
 
-.map p {
+.map h3 {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .map address {
-  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.map a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 
 .map span {
@@ -1976,9 +2013,7 @@ dt {
 }
 
 .map__contacts {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  padding: 74px 0 0 0;
 }
 
 .map__container {
@@ -1999,21 +2034,27 @@ dt {
 .footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr 1fr;
-  grid-template-columns: auto 1fr 1fr;
-  gap: 40px;
+  -ms-grid-columns: auto 5fr 1fr;
+  grid-template-columns: auto 5fr 1fr;
+  gap: 10px;
   width: 100%;
+}
+
+.footer__nav .nav__list {
+  padding-left: 30px;
 }
 
 .footer__social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 26px;
+  gap: 27px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   margin-left: auto;
+  padding-top: 9px;
+  padding-right: 1px;
 }
 
 .footer__social-media a:hover,
@@ -2024,6 +2065,37 @@ dt {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.mobile-menu {
+  position: absolute;
+  display: none;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  width: 285px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  background-color: #f9fbfd;
+}
+
+.mobile-menu__logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.mobile-menu__nav {
+  grid-column: 1/-1;
+  width: 100%;
+}
+
+.mobile-menu__button {
+  grid-column: 2/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 /* @mixin hover-focus {
@@ -2070,6 +2142,12 @@ dt {
 @media (max-width: 1365px) {
   .container {
     padding: 0 103px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .footer__nav .nav__list {
+    padding: 0;
   }
 }
 
@@ -2213,8 +2291,24 @@ dt {
 
   .nav__list--active {
     display: block;
-    width: 285px;
+    top: 0;
+    right: -15px;
     background-color: #f9fbfd;
+    color: #011c40;
+    padding: 75px 15px;
+  }
+
+  .nav__list--active .nav__item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav__list--active .nav__link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #011c40;
+    -webkit-filter: none;
+    filter: none;
   }
 
   .nav__button {

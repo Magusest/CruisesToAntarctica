@@ -1,7 +1,7 @@
 .greeting {
   position: relative;
   margin: 0;
-  padding: 284px 0 282px;
+  padding: 270px 0 286px;
   z-index: -1;
 
   @include vp-1023 {
@@ -18,7 +18,7 @@
   line-height: 66px;
   color: $color-alice-blue;
   text-shadow: 0 4px 4px $color-transparent-black;
-  padding: 0 90px;
+  padding: 0 95px;
 
   @include vp-1023 {
     font-size: 50px;
@@ -37,7 +37,7 @@
   line-height: 24px;
   color: $color-alice-blue;
   text-shadow: 0 4px 4px $color-transparent-black;
-  padding: 0 90px;
+  padding: 12px 0 0 95px;
 
   @include vp-1023 {
     font-size: 18px;

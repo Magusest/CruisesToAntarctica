@@ -1,7 +1,7 @@
 .map {
   display: grid;
-  grid-template-columns: 50% auto;
-  gap: 100px;
+  grid-template-columns: 48% auto;
+  gap: 103px;
   padding: 120px 0;
 
   @include vp-1023 {
@@ -16,15 +16,22 @@
   }
 }
 
-.map p {
+.map h3 {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .map address {
-  margin-bottom: 24px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.map a {
+  display: flex;
+  gap: 10px;
 }
 
 .map span {
@@ -36,7 +43,8 @@
 }
 
 .map__contacts {
-  align-self: center;
+  // align-self: center;
+  padding: 74px 0 0 0;
 }
 
 .map__container {
