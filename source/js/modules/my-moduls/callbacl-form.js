@@ -28,7 +28,6 @@ const submitHednler = (evt) => {
 
 function validateForm() {
   form.addEventListener('submit', submitHednler);
-
 }
 
 export {

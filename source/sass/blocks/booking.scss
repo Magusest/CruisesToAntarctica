@@ -1,7 +1,7 @@
 .booking {
   position: relative;
   background: linear-gradient(0deg, rgba($color-whisper, 0) 0%, rgba($color-whisper, 1) 35%);
-  z-index: -2;
+  z-index: 0;
 }
 
 .booking__wrapper {
@@ -73,6 +73,7 @@
   padding: 44px 50px 50px;
   background-color: $color-tangaroa;
   color: $color-alice-blue;
+  z-index: 5;
 
   @include vp-1023 {
     justify-self: center;
