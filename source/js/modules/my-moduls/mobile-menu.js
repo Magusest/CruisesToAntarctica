@@ -19,7 +19,7 @@ const unscrolHendler = (evt) => {
   if (evt.target === mobileMenuScreen) {
     closeMenuHendler();
   }
-}
+};
 
 const openButtonHendler = () => {
   mainLogo.style.opacity = '0';
