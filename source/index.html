@@ -328,13 +328,13 @@
               </div>
               <div class="booking__form">
                 <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
-                <form class="callback-form" action="#">
+                <form class="callback-form" action="#" data-form>
                   <label class="visually-hidden" for="name">Ваше имя</label>
-                  <input type="text" name="name" id="name" placeholder="Имя" required>
+                  <input type="text" name="name" id="name" placeholder="Имя" data-validate-type required>
                   <label class="visually-hidden" for="phone">Ваш контактный номер телефона</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" data-validate-type required>
                   <label class="visually-hidden" for="email">Ваш адресс электронной почты</label>
-                  <input type="email" name="email" id="email" placeholder="Email" required>
+                  <input type="email" name="email" id="email" placeholder="Email" data-validate-type required>
                   <label class="custom-checkbox" tabindex="0">
                     <input class="visually-hidden" type="checkbox" tabindex="-1" required>
                     <span class="checkbox"></span>
@@ -370,7 +370,7 @@
               <div class="map__container" id="map"></div>
             </div>
         </section>
-        <!-- <section class="introdution">
+        <section class="introdution">
           <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
@@ -380,7 +380,7 @@
             </p>
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
-        </section> -->
+        </section>
       </main>
       <footer class="footer">
         <div class="container footer__wrapper">
@@ -428,25 +428,12 @@
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
 
     <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <p class="modal__description">Спасибо! В соме блтжайшее время мы Вам перезвоним! С любовью и бла-бла-бал!</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>

@@ -1,6 +1,5 @@
 import {FocusLock} from '../../utils/focus-lock';
 const mobileMenuScreen = document.querySelector('[data-mobile-menu-screen]');
-const mobileMenu = mobileMenuScreen.querySelector('[data-mobile-menu]');
 const mobileMenuLink = mobileMenuScreen.querySelector('[data-mobile-link]');
 const mobileMenuLinks = mobileMenuScreen.querySelectorAll('[data-mobile-link]');
 const closeButton = mobileMenuScreen.querySelector('[data-close-mobile-menu]');
