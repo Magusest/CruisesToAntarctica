@@ -5,14 +5,14 @@
   padding: 120px 0;
 
   @include vp-1023 {
-    gap: 30px;
+    gap: 28px;
     padding: 100px 0;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 42px;
-    padding: 65px 0;
+    gap: 36px;
+    padding: 56px 0 65px;
   }
 }
 
@@ -20,13 +20,31 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
+
+  @include vp-1023 {
+    margin-bottom: 28px;
+  }
 }
 
 .map address {
   display: flex;
   gap: 10px;
   margin-bottom: 22px;
+
+  @include vp-1023 {
+    padding-right: 36px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+
+  svg {
+    @include vp-1023 {
+      margin-top: 6px;
+    }
+  }
 }
 
 .map a {
@@ -42,9 +60,22 @@
   color: $color-tangaroa;
 }
 
+.map svg {
+  @include vp-1023 {
+    min-width: 19px;
+  }
+}
+
 .map__contacts {
-  // align-self: center;
   padding: 74px 0 0 0;
+
+  @include vp-1023 {
+    padding-top: 64px;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+  }
 }
 
 .map__container {

@@ -2,6 +2,14 @@
   background-color: $color-tangaroa;
   padding: 50px 0;
   min-width: 320px;
+
+  @include vp-1023 {
+    padding: 40px 0 44px;
+  }
+
+  @include vp-767 {
+    padding: 30px 0 44px;
+  }
 }
 
 .footer__wrapper {
@@ -16,27 +24,32 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 22px;
   }
 }
 
 .footer__logo {
+  @include vp-1023 {
+    padding-top: 10px;
+  }
+
   @include vp-767 {
     margin-right: auto;
   }
 }
 
-.footer__nav .nav__list {
-  padding-left: 30px;
+// .footer__nav .nav__list--footer {
+//   padding-left: 30px;
 
-  @include vp-1279 {
-    padding: 0;
-  }
+//   @include vp-1279 {
+//     padding: 0;
+//   }
 
-  @include vp-767 {
-    display: block;
-    color: $color-alice-blue;
-  }
-}
+//   @include vp-767 {
+//     // display: block;
+//     color: $color-alice-blue;
+//   }
+// }
 
 .footer__social-media {
   display: flex;
@@ -46,9 +59,22 @@
   padding-top: 9px;
   padding-right: 1px;
 
+  @include vp-1023 {
+    gap: 18px;
+    padding: 0;
+    padding-top: 10px;
+  }
+
   @include vp-767 {
     margin: 0;
+    padding: 0;
     margin-right: auto;
+  }
+}
+
+.footer__social-media svg {
+  @include vp-1023 {
+    transform: scale(0.8);
   }
 }
 

@@ -5,11 +5,11 @@
   z-index: -1;
 
   @include vp-1023 {
-    padding: 256px 0;
+    padding: 268px 0 284px;
   }
 
   @include vp-767 {
-    padding: 198px 0;
+    padding: 176px 0 186px;
   }
 }
 
@@ -42,12 +42,15 @@
   @include vp-1023 {
     font-size: 18px;
     line-height: 22px;
+    margin-top: 12px;
     padding: 0;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
+    margin-top: 10px;
+    padding-right: 70px;
   }
 }
 

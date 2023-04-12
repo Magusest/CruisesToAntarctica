@@ -3,11 +3,11 @@
   padding: 110px 0 120px;
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding: 89px 0 101px;
   }
 
   @include vp-767 {
-    padding: 60px 0;
+    padding: 56px 0 64px;
   }
 }
 
@@ -36,11 +36,12 @@
 
   @include vp-1023 {
     gap: 30px;
+    margin-top: 49px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    margin-top: 40px;
+    margin-top: 31px;
   }
 }
 

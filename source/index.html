@@ -53,7 +53,7 @@
       <header>
         <div class="container">
           <div class="header">
-            <a  class="header__logo logo link" href="#">
+            <a  class="header__logo logo link" href="#" data-main-logo>
               <img src="./img/logo/logo.svg" width="70" height="40" alt="Our marvelous logo">
             </a>
             <nav class="header__nav nav">
@@ -71,7 +71,7 @@
                   <a class="nav__link link" href="#contacts">Контакты</a>
                 </li>
               </ul>
-              <button class="nav__button burger"></button>
+              <button class="nav__button burger" data-burger></button>
             </nav>
           </div>
         </div>
@@ -109,7 +109,7 @@
                 </svg>
               </li>
               <li class="advantage">
-                <h3>Система все включено</h3>
+                <h3>Система все&nbsp;включено</h3>
                 <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;.<br/> Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24 часа.</p>
                 <svg width="38" height="32">
                   <use href="#daw"></use>
@@ -130,7 +130,7 @@
         </section>
         <section class="cruises" id="cruises">
           <div class="container">
-            <h2>Ближайшие круизы</h2>
+            <h2 class="cruises__title">Ближайшие круизы</h2>
             <ul>
               <li class="cruise-card" tabindex="0">
                 <div class="cruise-card__offer">
@@ -324,7 +324,7 @@
             <div class="booking__wrapper">
               <div class="booking__intro">
                 <h3>Раннее бронирование</h3>
-                <p>Забронируйте тур за&nbsp;3&dash;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+                <p>Забронируйте тур за&nbsp;3&minus;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
               </div>
               <div class="booking__form">
                 <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
@@ -388,7 +388,7 @@
             <img src="./img/logo/logo.svg" width="70" height="40" alt="Our marvelous logo">
           </a>
           <nav class="footer__nav nav">
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--footer">
               <li class="nav__item">
                 <a class="nav__link link" href="#">Преимущества</a>
               </li>
@@ -456,25 +456,27 @@
       </div>
     </div>
 
-    <div class="mobile-menu">
-      <img class="mobile-menu__logo" src="./img/logo/logo-black.svg" width="42" height="22" alt="">
-      <nav class="mobile-menu__nav nav">
-        <ul class="nav__list nav__list--active">
-          <li class="nav__item">
-            <a class="nav__link link" href="#advantages">Преимущества</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="#">Направления</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="#cruises">Ближайшие круизы</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="mobile-menu__button burger burger--active"></button>
+    <div class="mobile-menu" data-mobile-menu-screen>
+      <div class="mobile-menu__wrapper" data-mobile-menu>
+        <img class="mobile-menu__logo" src="./img/logo/logo-black.svg" width="42" height="22" alt="">
+        <nav class="mobile-menu__nav nav" >
+          <ul class="nav__list nav__list--active">
+            <li class="nav__item">
+              <a class="nav__link link" href="#advantages" data-mobile-link>Преимущества</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Направления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#cruises" data-mobile-link>Ближайшие круизы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contacts" data-mobile-link>Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu__button burger burger--active" data-close-mobile-menu></button>
+      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>

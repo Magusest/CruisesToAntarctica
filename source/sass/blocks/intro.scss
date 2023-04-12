@@ -5,13 +5,24 @@
   align-self: center;
   padding: 112px 0 138px 0;
 
+  @include vp-1023 {
+    padding: 92px 0 93px 0;
+  }
+
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 44px;
+    padding: 60px 0 83px 0;
   }
 }
 
 .intro__wrapper {
   padding-top: 56px;
+
+  @include vp-1023 {
+    margin-top: -9px;
+    padding-top: 0;
+  }
 }
 
 .intro h2 {
@@ -22,6 +33,7 @@
   @include vp-1023 {
     font-size: 26px;
     line-height: 36px;
+    padding-right: 26px;
   }
 
   @include vp-767 {
@@ -36,11 +48,24 @@
   font-weight: 400;
   margin-top: 24px;
   padding-right: 34px;
+
+  @include vp-1023 {
+    margin-top: 16px;
+    padding-right: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 14px;
+  }
 }
 
 .intro picture {
   width: 100%;
   margin-left: 2px;
+
+  @include vp-1023 {
+    margin: 0;
+  }
 }
 
 .intro img {

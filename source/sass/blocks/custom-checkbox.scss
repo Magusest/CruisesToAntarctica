@@ -5,6 +5,12 @@
   align-items: center;
   margin-top: -1px;
 
+  @include vp-767 {
+    gap: 8px;
+    margin-top: -3px;
+    padding-right: 50px;
+  }
+
   input:checked + .checkbox::after {
     content: "";
     position: absolute;
@@ -24,6 +30,11 @@
   width: 18px;
   height: 18px;
   background-color: $color-alice-blue;
+
+  @include vp-767 {
+    min-width: 20px;
+    height: 20px;
+  }
 }
 
 .custom-checkbox span {

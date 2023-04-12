@@ -7,11 +7,11 @@
   overflow: hidden;
 
   @include vp-1023 {
-    padding: 35px;
+    padding: 28px 35px 36px;
   }
 
   @include vp-767 {
-    padding: 35px 25px;
+    padding: 28px 25px 36px;
   }
 }
 
@@ -29,6 +29,15 @@
 .cruise-card dl {
   margin-top: 1px;
   margin-bottom: -12px;
+
+  @include vp-1023 {
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  @include vp-767 {
+    margin-top: 4px;
+  }
 }
 
 .cruise-card dt {
@@ -80,8 +89,18 @@
 .cruise-card__cover h3 {
   content: "";
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 28px;
+  left: 35px;
+
+  @include vp-1023 {
+    bottom: 28px;
+    left: 35px;
+  }
+
+  @include vp-767 {
+    bottom: 18px;
+    left: 25px;
+  }
 }
 
 .cruise-card__cover picture {
