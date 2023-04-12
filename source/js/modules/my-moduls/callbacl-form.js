@@ -2,8 +2,6 @@
 const form = document.querySelector('[data-form]');
 const modal = document.querySelector('[data-modal="success"]');
 
-console.log(modal);
-
 const clickHendler = () => {
   modal.classList.remove('is-active');
 };
@@ -26,7 +24,7 @@ const submitHednler = (evt) => {
   form.reset();
   modal.classList.add('is-active');
   modalHendler();
-}
+};
 
 function validateForm() {
   form.addEventListener('submit', submitHednler);

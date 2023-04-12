@@ -79,7 +79,6 @@
 }
 
 .map__container {
-  background-color: $color-torch-red;
   order: -1;
   width: 100%;
   height: 306px;
@@ -92,4 +91,9 @@
     order: 0;
     height: 316px;
   }
+}
+
+.map__container iframe {
+  width: 100%;
+  height: 100%;
 }

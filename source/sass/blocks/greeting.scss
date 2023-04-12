@@ -3,6 +3,7 @@
   margin: 0;
   padding: 270px 0 286px;
   z-index: -1;
+  background: linear-gradient(0deg, rgba($color-sapphire,0) 0%, rgba($color-sapphire,1) 35%);
 
   @include vp-1023 {
     padding: 268px 0 284px;
