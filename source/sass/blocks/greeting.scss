@@ -19,6 +19,7 @@
   line-height: 66px;
   color: $color-alice-blue;
   text-shadow: 0 4px 4px $color-transparent-black;
+  margin: 0;
   padding: 0 95px;
 
   @include vp-1023 {
@@ -38,6 +39,7 @@
   line-height: 24px;
   color: $color-alice-blue;
   text-shadow: 0 4px 4px $color-transparent-black;
+  margin: 0;
   padding: 12px 0 0 95px;
 
   @include vp-1023 {

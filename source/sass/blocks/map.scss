@@ -20,6 +20,7 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+  margin: 0;
   margin-bottom: 33px;
 
   @include vp-1023 {
@@ -53,7 +54,7 @@
 }
 
 .map span {
-  font-family: $ff-montserrat-regular;
+  font-family: $ff-montserrat;
   font-size: 16px;
   line-height: 24px;
   font-style: normal;

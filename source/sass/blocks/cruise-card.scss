@@ -24,11 +24,14 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
+  margin: 0;
 }
 
 .cruise-card dl {
+  margin: 0;
   margin-top: 1px;
   margin-bottom: -12px;
+  padding: 0;
 
   @include vp-1023 {
     margin: 0;
@@ -41,16 +44,21 @@
 }
 
 .cruise-card dt {
+  margin: 0;
   margin-top: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
 }
 
 .cruise-card dd {
+  margin: 0;
   margin-bottom: 12px;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
   color: $color-quartz;
+
 }
 
 .cruise-card button {
@@ -89,8 +97,8 @@
 .cruise-card__cover h3 {
   content: "";
   position: absolute;
-  bottom: 28px;
-  left: 35px;
+  bottom: 22px;
+  left: 30px;
 
   @include vp-1023 {
     bottom: 28px;
