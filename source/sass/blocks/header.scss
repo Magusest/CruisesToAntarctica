@@ -18,6 +18,11 @@
 }
 
 .header__button {
-  margin-top: 4px;
-  padding: 5px 0;
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    margin-top: 4px;
+    padding: 5px 0;
+  }
 }
