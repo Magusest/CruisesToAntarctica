@@ -61,11 +61,12 @@
 
 }
 
-.cruise-card button {
+.cruise-card a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   color: $color-tangaroa;
+  text-align: center;
   background-color: $color-alice-blue;
   width: 100%;
   padding: 9px 0;
@@ -74,13 +75,13 @@
   transition: 0.5s;
 }
 
-.cruise-card button:hover,
-.cruise-card button:focus {
+.cruise-card a:hover,
+.cruise-card a:focus {
   background-color: $color-whisper;
   transform: scale(1.1);
 }
 
-.cruise-card button:active {
+.cruise-card a:active {
   transform: scale(0.9);
 }
 

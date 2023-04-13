@@ -1746,11 +1746,12 @@ button,
   color: #d8d8d9;
 }
 
-.cruise-card button {
+.cruise-card a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   color: #011c40;
+  text-align: center;
   background-color: #f9fbfd;
   width: 100%;
   padding: 9px 0;
@@ -1762,15 +1763,15 @@ button,
   transition: 0.5s;
 }
 
-.cruise-card button:hover,
-.cruise-card button:focus {
+.cruise-card a:hover,
+.cruise-card a:focus {
   background-color: #e5e5e5;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.cruise-card button:active {
+.cruise-card a:active {
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
