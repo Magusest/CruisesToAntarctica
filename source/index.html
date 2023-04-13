@@ -56,23 +56,29 @@
             <a  class="header__logo logo link" href="#" data-main-logo>
               <img src="./img/logo/logo.svg" width="70" height="40" alt="Our marvelous logo">
             </a>
-            <nav class="header__nav nav" data-mobile-menu-screen>
-              <ul class="nav__list list">
+            <nav class="header__nav nav" data-mobile-menu>
+              <a  class="nav__logo link" href="#" data-nav-logo data-mobile-link>
+                <img src="./img/logo/logo-black.svg" width="42" height="22" alt="Our marvelous logo">
+              </a>
+              <ul class="nav__list list" data-mobile-menu-list>
                 <li class="nav__item">
-                  <a class="nav__link link" href="#advantages">Преимущества</a>
+                  <a class="nav__link link" href="#advantages" data-mobile-link>Преимущества</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link link" href="#">Направления</a>
+                  <a class="nav__link link" href="#" data-mobile-link>Направления</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link link" href="#cruises">Ближайшие круизы</a>
+                  <a class="nav__link link" href="#cruises" data-mobile-link>Ближайшие круизы</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link link" href="#contacts">Контакты</a>
+                  <a class="nav__link link" href="#contacts" data-mobile-link>Контакты</a>
+                </li>
+                <li>
+                  <button class="nav__button burger burger--active" data-close-mobile-menu></button>
                 </li>
               </ul>
-              <button class="nav__button burger" data-burger></button>
             </nav>
+            <button class="header__button burger" data-burger></button>
           </div>
         </div>
       </header>
@@ -429,33 +435,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="mobile-menu" data-mobile-menu-screen>
-      <div class="mobile-menu__wrapper" data-mobile-menu>
-        <img class="mobile-menu__logo" src="./img/logo/logo-black.svg" width="42" height="22" alt="Our precious logo in black">
-        <nav class="mobile-menu__nav nav" >
-          <a class="nav__link link" href="#advantages" data-mobile-link>Преимущества</a>
-          <a class="nav__link link" href="#">Направления</a>
-          <a class="nav__link link" href="#cruises" data-mobile-link>Ближайшие круизы</a>
-          <a class="nav__link link" href="#contacts" data-mobile-link>Контакты</a>
-          <ul class="nav__list nav__list--active list">
-            <li class="nav__item">
-              <a class="nav__link link" href="#advantages" data-mobile-link>Преимущества</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Направления</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#cruises" data-mobile-link>Ближайшие круизы</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#contacts" data-mobile-link>Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="mobile-menu__button burger burger--active" data-close-mobile-menu></button>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

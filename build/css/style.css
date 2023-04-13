@@ -694,6 +694,10 @@ button,
   list-style-type: none;
 }
 
+.wrapper--active {
+  background-color: rgba(0, 43, 102, 0.5);
+}
+
 .container {
   width: 100%;
   max-width: 1366px;
@@ -1371,6 +1375,11 @@ button,
   z-index: 2;
 }
 
+.header__button {
+  margin-top: 4px;
+  padding: 5px 0;
+}
+
 .logo {
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -1405,6 +1414,10 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.nav__logo {
+  display: none;
 }
 
 .nav__list {
@@ -1470,12 +1483,17 @@ button,
 }
 
 .burger--active {
-  width: 13px;
-  height: 13px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 18px;
+  right: 20px;
   border: none;
   -ms-flex-item-align: start;
   -ms-grid-row-align: start;
   align-self: start;
+  background-color: transparent;
+  border-radius: 25%;
 }
 
 .burger--active::before,
@@ -2428,6 +2446,28 @@ button,
     height: 22px;
   }
 
+  .nav--active {
+    position: fixed;
+    display: -ms-grid;
+    display: grid;
+    top: 0;
+    right: -15px;
+    width: 300px;
+    height: 100vh;
+    background-color: #f9fbfd;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .nav__logo {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
   .nav__list {
     display: none;
   }
@@ -2443,9 +2483,10 @@ button,
     gap: 6px;
     top: 0;
     right: -15px;
+    height: 100%;
     background-color: #f9fbfd;
     color: #011c40;
-    padding: 44px 15px;
+    padding: 74px 15px 10px;
   }
 
   .nav__list--active .nav__item {
@@ -2483,6 +2524,7 @@ button,
 
   .nav__button {
     display: block;
+    opacity: 1;
   }
 
   .greeting {
