@@ -1,7 +1,10 @@
 .header {
   position: relative;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  // flex-wrap: wrap;
   gap: 12px;
   justify-content: space-between;
   padding: 35px 0;
@@ -17,6 +20,15 @@
   }
 }
 
+.header__logo {
+  grid-row: 1/-1;
+  margin: auto 0;
+}
+
+.header__nav {
+  grid-column: 2/3;
+}
+
 .header__button {
   display: none;
 
@@ -24,5 +36,7 @@
     display: block;
     margin-top: 4px;
     padding: 5px 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }

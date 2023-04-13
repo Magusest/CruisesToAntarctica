@@ -42,7 +42,11 @@
   line-height: 12px;
 }
 
-.custom-checkbox:hover,
-.custom-checkbox:focus {
+.custom-checkbox:hover {
   outline: solid $color-quartz;
+}
+
+.custom-checkbox input:focus ~ .checkbox {
+  transform: scale(1.1);
+  outline: auto $color-sapphire;
 }

@@ -9,6 +9,7 @@ const openButton = document.querySelector('[data-burger]');
 const mainLogo = document.querySelector('[data-main-logo]');
 const navLogo = document.querySelector('[data-nav-logo]');
 const focusLock = new FocusLock();
+const main = document.querySelector('main');
 
 const closeMenuHendler = () => {
   document.body.style.overflow = '';
@@ -21,6 +22,12 @@ const closeMenuHendler = () => {
   focusLock.unlock();
 };
 
+const unscrollHandler = (e) => {
+  if (e.target === main) {
+    closeMenuHendler();
+  }
+};
+
 const openButtonHendler = () => {
   mainLogo.style.translate = '36px';
   mainLogo.style.opacity = '0';
@@ -29,6 +36,7 @@ const openButtonHendler = () => {
   mobileMenuList.classList.add('nav__list--active');
   document.body.style.overflow = 'hidden';
   closeButton.addEventListener('click', closeMenuHendler);
+  main.addEventListener('click', unscrollHandler);
   focusLock.lock('[data-mobile-menu]');
   mobileMenuLink.focus();
   wrapper.classList.add('wrapper--active');

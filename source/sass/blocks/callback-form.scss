@@ -1,13 +1,17 @@
 .callback-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin-top: 28px;
 }
 
 .callback-form input {
+  width: 100%;
   padding: 11px 16px 12px;
   margin: 0;
   margin-bottom: 22px;
+}
+
+.callback-form input[type="checkbox"] {
+  width: 0;
 }
 
 .callback-form button {

@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -32,7 +33,8 @@
 
 .nav__list {
   display: flex;
-  gap: 33px;
+  flex-wrap: wrap;
+  gap: 10px 33px;
   align-items: center;
 
   @include vp-1023 {

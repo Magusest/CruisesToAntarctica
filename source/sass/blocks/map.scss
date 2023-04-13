@@ -32,6 +32,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 22px;
+  transition: 0.5s;
 
   @include vp-1023 {
     padding-right: 36px;
@@ -51,6 +52,12 @@
 .map a {
   display: flex;
   gap: 10px;
+  transition: 0.5s;
+}
+
+.map a:hover,
+.map a:focus {
+  transform: scale(1.03);
 }
 
 .map span {

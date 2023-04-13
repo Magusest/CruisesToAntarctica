@@ -330,15 +330,18 @@
               </div>
               <div class="booking__form">
                 <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
-                <form class="callback-form" action="#" data-form>
-                  <label class="visually-hidden" for="name">Ваше имя</label>
-                  <input type="text" name="name" id="name" placeholder="Имя" data-validate-type required>
-                  <label class="visually-hidden" for="phone">Ваш контактный номер телефона</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Телефон" data-validate-type required>
-                  <label class="visually-hidden" for="email">Ваш адресс электронной почты</label>
-                  <input type="email" name="email" id="email" placeholder="Email" data-validate-type required>
-                  <label class="custom-checkbox" tabindex="0">
-                    <input class="visually-hidden" type="checkbox" tabindex="-1" required>
+                <form class="callback-form" action="https://echo.htmlacademy.ru/" data-form>
+                  <label for="name">
+                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                  </label>
+                  <label for="phone" data-phone-input>
+                    <input class="callback-form__phone-input" type="text" name="phone" id="phone" placeholder="Телефон" required>
+                  </label>
+                  <label for="email">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input class="visually-hidden" type="checkbox" required>
                     <span class="checkbox"></span>
                     <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
                   </label>

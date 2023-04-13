@@ -1363,9 +1363,10 @@ button,
 .header {
   position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
   gap: 12px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1373,6 +1374,17 @@ button,
   padding: 35px 0;
   margin-bottom: -100%;
   z-index: 2;
+}
+
+.header__logo {
+  grid-row: 1/-1;
+  margin: auto 0;
+}
+
+.header__nav {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 .header__button {
@@ -1410,6 +1422,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1423,7 +1437,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 33px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px 33px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1587,7 +1603,7 @@ button,
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(229, 229, 229, 0)), color-stop(35%, #e5e5e5));
   background: -o-linear-gradient(bottom, rgba(229, 229, 229, 0) 0%, #e5e5e5 35%);
   background: linear-gradient(0deg, rgba(229, 229, 229, 0) 0%, #e5e5e5 35%);
-  z-index: -2;
+  z-index: 0;
 }
 
 .advantages h2 {
@@ -1885,20 +1901,20 @@ button,
 }
 
 .callback-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: -ms-grid;
+  display: grid;
   margin-top: 28px;
 }
 
 .callback-form input {
+  width: 100%;
   padding: 11px 16px 12px;
   margin: 0;
   margin-bottom: 22px;
+}
+
+.callback-form input[type=checkbox] {
+  width: 0;
 }
 
 .callback-form button {
@@ -1967,9 +1983,15 @@ button,
   line-height: 12px;
 }
 
-.custom-checkbox:hover,
-.custom-checkbox:focus {
+.custom-checkbox:hover {
   outline: solid #d8d8d9;
+}
+
+.custom-checkbox input:focus ~ .checkbox {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  outline: auto #101a56;
 }
 
 .map {
@@ -1995,6 +2017,9 @@ button,
   display: flex;
   gap: 10px;
   margin-bottom: 22px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .map a {
@@ -2002,6 +2027,16 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.map a:hover,
+.map a:focus {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .map span {
@@ -2044,10 +2079,16 @@ button,
   width: 100%;
 }
 
+.footer__logo {
+  margin: auto 0;
+}
+
 .footer__social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 27px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -2422,6 +2463,12 @@ button,
     display: block;
     margin-top: 4px;
     padding: 5px 0;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
   }
 
   .logo img {
