@@ -16,22 +16,30 @@ const onDocumentKeyDown = (evt) => {
   }
 };
 
-
 const modalHendler = () => {
   document.addEventListener('click', clickHendler);
   document.addEventListener('keydown', onDocumentKeyDown);
 };
 
+// phoneInput.addEventListener('change', () => {
+//   console.log(phoneInput.querySelector('input').value.length);
+// });
+
 const submitHednler = (evt) => {
+  if (phoneInput.querySelector('input').value.length === 18) {
+    evt.preventDefault();
+    form.reset();
+    modal.classList.add('is-active');
+    modalHendler();
+  }
   evt.preventDefault();
-  form.reset();
-  modal.classList.add('is-active');
-  modalHendler();
+  phoneInput.querySelector('input').focus();
 };
 
 function validateForm() {
-  form.addEventListener('submit', submitHednler);
   formValidator.initPhoneInput(phoneInput);
+  formValidator.init();
+  form.addEventListener('submit', submitHednler);
 }
 
 export {

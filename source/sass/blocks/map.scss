@@ -53,6 +53,8 @@
   display: flex;
   gap: 10px;
   transition: 0.5s;
+  width: fit-content;
+  margin-right: auto;
 }
 
 .map a:hover,
@@ -69,6 +71,8 @@
 }
 
 .map svg {
+  flex-shrink: 0;
+
   @include vp-1023 {
     min-width: 19px;
   }

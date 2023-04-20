@@ -4,11 +4,11 @@
   min-width: 320px;
 
   @include vp-1023 {
-    padding: 40px 0 44px;
+    padding: 44px 0;
   }
 
   @include vp-767 {
-    padding: 30px 0;
+    padding: 30px 0 27px;
   }
 }
 
@@ -43,23 +43,27 @@
 .footer__social-media {
   display: flex;
   flex-wrap: wrap;
-  gap: 27px;
+  gap: 17px;
   align-self: center;
   margin-left: auto;
-  padding-top: 9px;
-  padding-right: 1px;
+  margin-right: -4px;
+  margin-bottom: -8px;
+  padding: 0;
 
   @include vp-1023 {
-    gap: 18px;
+    gap: 8px;
+    margin-right: -6px;
     padding: 0;
-    padding-top: 10px;
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: -6px auto 0 -5px;
     padding: 0;
-    margin-right: auto;
   }
+}
+
+.footer__social-media a {
+  padding: 5px;
 }
 
 .footer__social-media svg {

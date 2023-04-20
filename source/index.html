@@ -179,6 +179,13 @@
                   </dl>
                   <a href="#">Забронировать</a>
                 </div>
+                <div class="cruise-card__cover">
+                  <h3>Круиз &laquo;Астория&raquo;</h3>
+                  <picture>
+                    <source type="image/webp" srcset="./img/cruises/astoria.webp 1x, ./img/cruises/astoria@2x.webp 2x">
+                    <img src="./img/cruises/astoria.jpg" srcset="./img/cruises/astoria@2x.jpg" width="260" height="386" alt="Красивый ледник">
+                  </picture>
+                </div>
               </li>
               <li class="cruise-card" tabindex="0">
                 <div class="cruise-card__offer">
@@ -328,17 +335,17 @@
                 <h3>Раннее бронирование</h3>
                 <p>Забронируйте тур за&nbsp;3&minus;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
               </div>
-              <div class="booking__form">
+              <div class="booking__form" data-forma>
                 <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
-                <form class="callback-form" action="https://echo.htmlacademy.ru/" data-form>
+                <form class="callback-form" action="https://echo.htmlacademy.ru/" data-form data-form-validate>
                   <label for="name">
-                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                    <input type="text" name="name" id="name" placeholder="Имя" data-form-validate required>
                   </label>
-                  <label for="phone" data-phone-input>
-                    <input class="callback-form__phone-input" type="text" name="phone" id="phone" placeholder="Телефон" required>
+                  <label for="phone" data-phone-input >
+                    <input class="callback-form__phone-input" type="text" name="phone" id="phone" placeholder="Телефон" minlength="18" maxlength="18" required>
                   </label>
                   <label for="email">
-                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="email" name="email" id="email" placeholder="Email" data-form-validate required>
                   </label>
                   <label class="custom-checkbox">
                     <input class="visually-hidden" type="checkbox" required>

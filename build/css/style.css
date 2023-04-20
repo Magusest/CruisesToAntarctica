@@ -1456,8 +1456,6 @@ button,
 .nav__link {
   font-size: 16px;
   line-height: 20px;
-  -webkit-filter: drop-shadow(0 4px 4px #000000);
-  filter: drop-shadow(0 4px 4px #000000);
   cursor: pointer;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1562,10 +1560,10 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 40px;
   -ms-grid-row-align: center;
   align-self: center;
-  padding: 112px 0 138px 0;
+  padding: 112px 0 145px 0;
 }
 
 .intro__wrapper {
@@ -1590,7 +1588,6 @@ button,
 
 .intro picture {
   width: 100%;
-  margin-left: 2px;
 }
 
 .intro img {
@@ -1637,6 +1634,7 @@ button,
 }
 
 .advantage {
+  cursor: default;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1673,22 +1671,6 @@ button,
   order: -1;
 }
 
-.advantage:hover {
-  background-color: #011c40;
-}
-
-.advantage:hover h3 {
-  color: #f9fbfd;
-}
-
-.advantage:hover p {
-  color: #f9fbfd;
-}
-
-.advantage:hover svg {
-  fill: #f9fbfd;
-}
-
 .cruises {
   padding: 86px 0 120px;
 }
@@ -1718,12 +1700,14 @@ button,
   height: 386px;
   padding: 28px 25px 35px 25px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .cruise-card__offer {
   display: -ms-grid;
   display: grid;
   height: 100%;
+  overflow: scroll;
 }
 
 .cruise-card h3 {
@@ -1845,7 +1829,10 @@ button,
   display: grid;
   -ms-grid-columns: 1fr auto;
   grid-template-columns: 1fr auto;
-  gap: 140px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 40px;
   padding: 50px 60px;
 }
 
@@ -1867,7 +1854,7 @@ button,
   line-height: 27px;
   margin: 0;
   margin-top: 8px;
-  padding-right: 120px;
+  padding-right: 220px;
 }
 
 .booking__form {
@@ -1928,6 +1915,7 @@ button,
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .callback-form button:hover,
@@ -2030,6 +2018,10 @@ button,
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
 }
 
 .map a:hover,
@@ -2045,6 +2037,11 @@ button,
   line-height: 24px;
   font-style: normal;
   color: #011c40;
+}
+
+.map svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .map__contacts {
@@ -2089,13 +2086,18 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 27px;
+  gap: 17px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   margin-left: auto;
-  padding-top: 9px;
-  padding-right: 1px;
+  margin-right: -4px;
+  margin-bottom: -8px;
+  padding: 0;
+}
+
+.footer__social-media a {
+  padding: 5px;
 }
 
 .footer__social-media a:hover,
@@ -2226,6 +2228,16 @@ button,
   .nav__list--footer {
     padding: 0;
   }
+
+  .cruises ul,
+  .cruises ol {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .booking__intro p {
+    padding-right: 80px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2273,6 +2285,7 @@ button,
   }
 
   .intro {
+    gap: 30px;
     padding: 92px 0 93px 0;
   }
 
@@ -2290,10 +2303,6 @@ button,
   .intro p {
     margin-top: 16px;
     padding-right: 0;
-  }
-
-  .intro picture {
-    margin: 0;
   }
 
   .advantages {
@@ -2413,7 +2422,7 @@ button,
   }
 
   .footer {
-    padding: 40px 0 44px;
+    padding: 44px 0;
   }
 
   .footer__wrapper {
@@ -2425,9 +2434,9 @@ button,
   }
 
   .footer__social-media {
-    gap: 18px;
+    gap: 8px;
+    margin-right: -6px;
     padding: 0;
-    padding-top: 10px;
   }
 
   .footer__social-media svg {
@@ -2510,13 +2519,21 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     gap: 6px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     top: 0;
     right: -15px;
     height: 100%;
     background-color: #f9fbfd;
     color: #011c40;
-    padding: 74px 15px 10px;
+    margin-top: 54px;
+    margin-bottom: auto;
+    padding: 20px 15px 60px;
+    overflow: scroll;
   }
 
   .nav__list--active .nav__item {
@@ -2607,7 +2624,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 44px;
-    padding: 60px 0 83px 0;
+    padding: 60px 0 85px 0;
   }
 
   .intro h2 {
@@ -2734,7 +2751,7 @@ button,
   }
 
   .footer {
-    padding: 30px 0;
+    padding: 30px 0 27px;
   }
 
   .footer__wrapper {
@@ -2748,9 +2765,8 @@ button,
   }
 
   .footer__social-media {
-    margin: 0;
+    margin: -6px auto 0 -5px;
     padding: 0;
-    margin-right: auto;
   }
 }
 

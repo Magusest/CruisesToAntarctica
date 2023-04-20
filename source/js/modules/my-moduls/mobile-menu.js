@@ -10,6 +10,7 @@ const mainLogo = document.querySelector('[data-main-logo]');
 const navLogo = document.querySelector('[data-nav-logo]');
 const focusLock = new FocusLock();
 const main = document.querySelector('main');
+const sections = document.querySelectorAll('section');
 
 const closeMenuHendler = () => {
   document.body.style.overflow = '';
@@ -19,6 +20,10 @@ const closeMenuHendler = () => {
   mobileMenu.classList.remove('nav--active');
   mobileMenuList.classList.remove('nav__list--active');
   wrapper.classList.remove('wrapper--active');
+  sections.forEach((section) => {
+    section.style.position = 'relative';
+    section.style.zIndex = '0';
+  });
   focusLock.unlock();
 };
 
@@ -37,6 +42,10 @@ const openButtonHendler = () => {
   document.body.style.overflow = 'hidden';
   closeButton.addEventListener('click', closeMenuHendler);
   main.addEventListener('click', unscrollHandler);
+  sections.forEach((section) => {
+    section.style.position = 'relative';
+    section.style.zIndex = '-10';
+  });
   focusLock.lock('[data-mobile-menu]');
   mobileMenuLink.focus();
   wrapper.classList.add('wrapper--active');
