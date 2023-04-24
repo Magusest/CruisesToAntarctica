@@ -2,16 +2,19 @@
   position: relative;
   background-color: $color-tangaroa;
   color: $color-alice-blue;
+  width: 260px;
   height: 386px;
   padding: 28px 25px 35px 25px;
   overflow: hidden;
   cursor: pointer;
 
   @include vp-1023 {
+    width: 309px;
     padding: 28px 35px 36px;
   }
 
   @include vp-767 {
+    width: 270px;
     padding: 28px 25px 36px;
   }
 }

@@ -30,23 +30,18 @@
 .cruises ul,
 .cruises ol {
   margin-top: 48px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
   padding: 0 15px;
 
-  @include vp-1279 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   @include vp-1023 {
-    grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
   }
 
   @include vp-767 {
     margin-top: 31px;
     padding: 0 10px;
-    grid-template-columns: 1fr;
   }
 }

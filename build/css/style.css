@@ -1685,11 +1685,15 @@ button,
 .cruises ul,
 .cruises ol {
   margin-top: 48px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0 15px;
 }
 
@@ -1697,6 +1701,7 @@ button,
   position: relative;
   background-color: #011c40;
   color: #f9fbfd;
+  width: 260px;
   height: 386px;
   padding: 28px 25px 35px 25px;
   overflow: hidden;
@@ -2229,12 +2234,6 @@ button,
     padding: 0;
   }
 
-  .cruises ul,
-  .cruises ol {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .booking__intro p {
     padding-right: 80px;
   }
@@ -2345,12 +2344,11 @@ button,
 
   .cruises ul,
   .cruises ol {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
   }
 
   .cruise-card {
+    width: 309px;
     padding: 28px 35px 36px;
   }
 
@@ -2673,11 +2671,10 @@ button,
   .cruises ol {
     margin-top: 31px;
     padding: 0 10px;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
   }
 
   .cruise-card {
+    width: 270px;
     padding: 28px 25px 36px;
   }
 
